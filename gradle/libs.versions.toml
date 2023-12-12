@@ -1,0 +1,22 @@
+[versions]
+
+plugin-ktlint = "3.10.0"
+plugin-detekt = "1.22.0"
+plugin-ksp = "1.9.21-1.0.15"
+plugin-android = "8.2.0"
+plugin-buildKonfig = "0.13.3"
+
+kotlin = "1.9.21"
+compose = "1.5.11"
+compose-compiler = "1.5.4"
+
+[libraries]
+
+plugin-ksp = { module = "com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin", version.ref = "plugin-ksp" }
+plugin-android = { module = "com.android.tools.build:gradle", version.ref = "plugin-android" }
+plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+plugin-kotlin-serialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
+plugin-multiplatform-compose = { module = "org.jetbrains.compose:compose-gradle-plugin", version.ref = "compose" }
+plugin-buildKonfig = { module = "com.codingfeline.buildkonfig:buildkonfig-gradle-plugin", version.ref = "plugin-buildKonfig" }
+plugin-ktlint = { module = "org.jmailen.gradle:kotlinter-gradle", version.ref = "plugin-ktlint" }
+plugin-detekt = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "plugin-detekt" }
